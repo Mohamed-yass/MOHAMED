@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - Alinear paràgrafs horitzontalment</title>
+    <style>
+        /* Estils per al contenidor */
+        .contenidor {
+            font-size: 0; /* Elimina l'espai entre els elements inline-block */
+        }
+
+        /* Estils per als paràgrafs */
+        .contenidor p {
+            display: inline-block; /* Mostra els paràgrafs en línia */
+            width: 23%; /* Amplada de cada paràgraf */
+            background-color: #f0f0f0; /* Color de fons */
+            padding: 10px; /* Espai interior */
+            border: 1px solid #ccc; /* Vora */
+            border-radius: 5px; /* Cantonades arrodonides */
+            margin: 0 1%; /* Marges laterals */
+            font-size: 16px; /* Restaura la mida del text */
+            box-sizing: border-box; /* Inclou el padding i la vora en l'amplada */
+        }
+    </style>
+</head>
+<body>
+<div class="contenidor">
+    <p>Aquest és el primer paràgraf.</p>
+    <p>Aquest és el segon paràgraf.</p>
+    <p>Aquest és el tercer paràgraf.</p>
+    <p>Aquest és el quart paràgraf.</p>
+</div>
+</body>
+</html>

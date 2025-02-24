@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo con Variables CSS</title>
+    <style>
+        .rectangulo {
+            --altura: 200px;
+            height: var(--altura);
+            width: 400px;
+            background-color: red;
+            border: 2px solid blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="rectangulo"> 200px/400px</div>
+</body>
+</html>
