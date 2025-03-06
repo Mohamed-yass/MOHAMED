@@ -1,0 +1,11 @@
+/proyecto portafolio
+│
+├── index.html
+├── sobre-mi.html
+├── activitats.html
+├── contacte.html
+│
+├── /imatges          
+│ 
+└── /estils            
+   
