@@ -1,0 +1,118 @@
+body {
+    background-image: url("../imatges/itachi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 10px 10rem;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+main {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+nav {
+    padding-top: 1rem;
+}
+li{
+    list-style: none;
+    font-size: x-large;
+}
+h1{
+    font-size: xxx-large;
+}
+h2{
+    font-size: xx-large;
+}
+.large{
+    font-size: x-large;
+}
+/* los codigos de abajo lo consegui en un sitio web : universe.io*/
+header ul li a {
+    --glow-color: rgb(153, 0, 0);          /* Rojo oscuro */
+    --glow-spread-color: rgba(139, 0, 0, 0.781); /* Rojo oscuro con transparencia */
+    --enhanced-glow-color: rgb(204, 51, 51); /* Rojo medio apagado */
+    --btn-color: rgb(102, 0, 0);          /* Rojo muy oscuro */
+    display: inline-block; /* Hace que el enlace ocupe todo el espacio */
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: rgb(255, 255, 255);            /* Cambiado a blanco */
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 1em;
+    text-decoration: none; /* Sin subrayado por defecto */
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+header ul li a::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+header ul li a:hover { /* al pasar el ratón */
+    color: rgb(0, 0, 0);                  /* Cambiado a negro */
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-decoration: underline; /* Mantengo tu efecto hover original */
+}
+
+header ul li a:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
