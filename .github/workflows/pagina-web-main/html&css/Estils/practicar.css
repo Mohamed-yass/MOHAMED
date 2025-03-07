@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;/* Estilos para la tarjeta giratoria en el form */
+    .card {
+        overflow: visible;
+        width: 400px; /* Ajustado para que el formulario sea más amplio */
+        height: 500px; /* Ajustado para que contenga el formulario */
+        position: relative; /* Para posicionar los elementos internos */
+        margin-left: 10%; /* Alinea con el padding-left del main */
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 300ms;
+        box-shadow: 0px 0px 10px 1px #000000ee;
+        border-radius: 5px;
+    }
+
+    .front, .back {
+        background-color: #151515;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .back {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transform: rotateY(180deg); /* Parte trasera inicialmente oculta */
+    }
+
+    .back::before {
+        position: absolute;
+        content: ' ';
+        display: block;
+        width: 160px;
+        height: 160%;
+        background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+        animation: rotation_481 5000ms infinite linear;
+    }
+
+    .back-content {
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        background-color: #151515;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card:hover .content {
+        transform: rotateY(180deg); /* Gira al pasar el ratón */
+    }
+
+    @keyframes rotation_481 {
+        0% {
+            transform: rotateZ(0deg);
+        }
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    .front {
+        transform: rotateY(0deg); /* Frente inicialmente visible */
+        color: white;
+    }
+
+    .front .front-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .front-content form {
+        width: 100%;
+    }
+
+    .front-content label {
+        color: white;
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    .front-content input[type="text"],
+    .front-content input[type="email"],
+    .front-content textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 2px solid rgb(153, 0, 0);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+        font-size: 16px;
+    }
+
+    .front-content input[type="submit"] {
+        background-color: rgb(102, 0, 0);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+
+    .front-content input[type="submit"]:hover {
+        background-color: rgb(153, 0, 0);
+        box-shadow: 0 0 1em 0.25em rgba(139, 0, 0, 0.781);
+    }
+
+    /* Círculos decorativos */
+    .front .img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #ffbb66;
+        position: absolute;
+        filter: blur(15px);
+        animation: floating 2600ms infinite linear;
+    }
+
+    #bottom {
+        background-color: #ff8866;
+        left: 50px;
+        top: 0px;
+        width: 150px;
+        height: 150px;
+        animation-delay: -800ms;
+    }
+
+    #right {
+        background-color: #ff2233;
+        left: 160px;
+        top: -80px;
+        width: 30px;
+        height: 30px;
+        animation-delay: -1800ms;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    /* Ajustes para el contenedor flex */
+    main section .flex-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    main section h2 {
+        font-size: 40px;
+        width: 28%;
+    }
+
+    main section p {
+        width: 30rem;
+    }
+    height: 100vh;
+    overflow-x: hidden; /* Evita scroll horizontal */
+    position: relative; /* Para que el video se posicione correctamente */
+}
+
+/* Estilo para el video de fondo */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Asegura que el video cubra todo el espacio */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+header {
+    color: white;
+    padding: 10px 10rem;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+main {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+nav {
+    padding-top: 1rem;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+/* Los códigos de abajo lo conseguí en un sitio web: universe.io */
+header ul li a {
+    --glow-color: rgb(153, 0, 0);          /* Rojo oscuro */
+    --glow-spread-color: rgba(139, 0, 0, 0.781); /* Rojo oscuro con transparencia */
+    --enhanced-glow-color: rgb(204, 51, 51); /* Rojo medio apagado */
+    --btn-color: rgb(102, 0, 0);          /* Rojo muy oscuro */
+    display: inline-block; /* Hace que el enlace ocupe todo el espacio */
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: rgb(255, 255, 255);            /* Cambiado a blanco */
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 1em;
+    text-decoration: none; /* Sin subrayado por defecto */
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+header ul li a::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+header ul li a:hover { /* al pasar el ratón */
+    color: rgb(0, 0, 0);                  /* Cambiado a negro */
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-decoration: underline; /* Mantengo tu efecto hover original */
+}
+
+header ul li a:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}

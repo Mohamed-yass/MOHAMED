@@ -31,6 +31,8 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.activitats.html.executor": "Run",
+    "JavaScript Debug.contacte.html.executor": "Run",
+    "JavaScript Debug.contacts.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.practica.html.executor": "Run",
     "JavaScript Debug.sobre-mi.html.executor": "Run",
@@ -49,6 +51,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main\html&amp;css\Imatges" />
+      <recent name="C:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main\html&amp;css" />
       <recent name="C:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main" />
     </key>
   </component>
@@ -72,7 +75,9 @@
       <workItem from="1740998812247" duration="791000" />
       <workItem from="1741010676392" duration="65000" />
       <workItem from="1741258970040" duration="73000" />
-      <workItem from="1741259057169" duration="7421000" />
+      <workItem from="1741259057169" duration="8256000" />
+      <workItem from="1741291218555" duration="3603000" />
+      <workItem from="1741357311544" duration="20344000" />
     </task>
     <servers />
   </component>

@@ -6,12 +6,12 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
-
 header {
     color: white;
-    padding: 10px 10rem;
-    text-align: center;
+    padding-top: 1%;
+    padding-left: 10%;
 }
 
 header ul {
@@ -27,13 +27,13 @@ header ul li {
 
 main {
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding-top: 1px;
+    padding-left: 10%;
 }
+
 
 /* Estilo para la tabla */
 table {
-    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     border-collapse: collapse;
@@ -48,7 +48,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -67,11 +67,21 @@ footer a:hover {
 nav {
     padding-top: 1rem;
 }
+
 h1{
-    font-size: xxx-large;
+    font-size: 60px;
+        text-shadow:
+                4px 4px 5px rgba(255, 0, 0, 1),
+                4px 6px 10px rgba(255, 0, 0, 0.8),
+                4px 8px 15px rgba(255, 0, 0, 0.5);
 }
 h2{
-    font-size: xx-large;
+    font-size: 40px;
+        text-shadow:
+                4px 4px 5px rgba(255, 0, 0, 1),
+                4px 6px 10px rgba(255, 0, 0, 0.8),
+                4px 8px 15px rgba(255, 0, 0, 0.5);
+
 }
 /* los codigos de abajo lo consegui en un sitio web : universe.io*/
 
@@ -84,7 +94,7 @@ header ul li a {
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
     color: rgb(255, 255, 255);            /* Cambiado a blanco */
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 1em;
     text-decoration: none; /* Sin subrayado por defecto */

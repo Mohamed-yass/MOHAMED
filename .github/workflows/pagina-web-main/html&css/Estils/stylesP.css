@@ -3,15 +3,16 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     margin: 0;
+    height: 100vh;
     padding: 0;
+    width: 100%;
 }
 
 header {
     color: white;
-    padding: 10px 10rem;
-    text-align: center;
+    padding-top: 1%;
+    padding-left: 10%;
 }
 
 header ul {
@@ -26,15 +27,15 @@ header ul li {
 
 main {
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding-top: 1px;
+    padding-left: 10%;
 }
 
 footer {
     background-color: rgba(0, 0, 0, 0.8); 
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -54,25 +55,35 @@ nav {
     padding-top: 1rem;
 }
 h1{
-    font-size: xxx-large;
+    font-size: 60px;
+    text-shadow:
+            4px 4px 5px rgba(255, 0, 0, 1),
+            4px 6px 10px rgba(255, 0, 0, 0.8),
+            4px 8px 15px rgba(255, 0, 0, 0.5);
 }
 h2{
-    font-size: xx-large;
+    font-size: 40px;
+    text-shadow:
+            4px 4px 5px rgba(255, 0, 0, 1),
+            4px 6px 10px rgba(255, 0, 0, 0.8),
+            4px 8px 15px rgba(255, 0, 0, 0.5);
 }
-/* los codigos de abajo lo consegui en un sitio web : universe.io*/
+ section{
+    font-size: 30px;
+}
 header ul li a {
-    --glow-color: rgb(153, 0, 0);          /* Rojo oscuro */
-    --glow-spread-color: rgba(139, 0, 0, 0.781); /* Rojo oscuro con transparencia */
-    --enhanced-glow-color: rgb(204, 51, 51); /* Rojo medio apagado */
-    --btn-color: rgb(102, 0, 0);          /* Rojo muy oscuro */
-    display: inline-block; /* Hace que el enlace ocupe todo el espacio */
+    --glow-color: rgb(153, 0, 0);
+    --glow-spread-color: rgba(139, 0, 0, 0.781);
+    --enhanced-glow-color: rgb(204, 51, 51);
+    --btn-color: rgb(102, 0, 0);
+    display: inline-block;
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
-    color: rgb(255, 255, 255);            /* Cambiado a blanco */
-    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     font-weight: bold;
     border-radius: 1em;
-    text-decoration: none; /* Sin subrayado por defecto */
+    text-decoration: none;
     box-shadow: 0 0 1em .25em var(--glow-color),
     0 0 4em 1em var(--glow-spread-color),
     inset 0 0 .75em .25em var(--glow-color);
@@ -107,4 +118,10 @@ header ul li a:active {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 .5em .25em var(--glow-color);
+}
+main section p{
+    text-shadow:
+            4px 4px 5px rgba(255, 0, 0, 1),
+            4px 6px 10px rgba(255, 0, 0, 0.8),
+            4px 8px 15px rgba(255, 0, 0, 0.5);
 }
