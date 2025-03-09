@@ -57,11 +57,48 @@ footer {
 footer a {
     color: red;
     text-decoration: none;
+
 }
 
 footer a:hover {
     text-decoration: underline;
     color: blue;
+
+}
+table td a{
+    color: blue;
+    text-decoration: none;
+    text-shadow: none;
+}
+table td a:hover{
+    color: white;
+    text-decoration: none;
+    text-shadow:
+            4px 4px 5px rgba(255, 0, 0, 1),
+            4px 6px 10px rgba(255, 0, 0, 0.8),
+            4px 8px 15px rgba(255, 0, 0, 0.5);
+}
+
+table th{
+    color: white;
+    text-decoration: none;
+    text-shadow:
+            4px 4px 5px rgba(255, 0, 0, 1),
+            4px 6px 10px rgba(255, 0, 0, 0.8),
+            4px 8px 15px rgba(255, 0, 0, 0.5);
+}
+table tr{
+    color: white;
+    text-decoration: none;
+    text-shadow:
+            4px 4px 5px rgba(255, 0, 0, 1),
+            4px 6px 10px rgba(255, 0, 0, 0.8),
+            4px 8px 15px rgba(255, 0, 0, 0.5);
+}
+a:hover {
+    text-decoration: underline;
+    color: blue;
+    text-shadow: none;
 }
 
 nav {
@@ -132,4 +169,8 @@ header ul li a:active {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 .5em .25em var(--glow-color);
+}
+table{
+    font-size: 40px;
+    text-align: center;
 }
