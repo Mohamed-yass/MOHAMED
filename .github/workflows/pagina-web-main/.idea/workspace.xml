@@ -38,13 +38,14 @@
     "JavaScript Debug.sobre-mi.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/P$YACHOPATH/Documents/GitHub/MOHAMED/.github/workflows/pagina-web-main",
+    "last_opened_file_path": "E:/Users/P$YACHOPATH/Documents/GitHub/MOHAMED/.github/workflows/pagina-web-main",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -78,6 +79,7 @@
       <workItem from="1741259057169" duration="8256000" />
       <workItem from="1741291218555" duration="3603000" />
       <workItem from="1741357311544" duration="20344000" />
+      <workItem from="1741517939772" duration="984000" />
     </task>
     <servers />
   </component>
