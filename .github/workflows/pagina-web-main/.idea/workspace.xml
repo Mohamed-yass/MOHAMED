@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -30,6 +30,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.a.html.executor": "Run",
     "JavaScript Debug.activitats.html.executor": "Run",
     "JavaScript Debug.contacte.html.executor": "Run",
     "JavaScript Debug.contacts.html.executor": "Run",
@@ -52,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main\EAF2\Imatges" />
       <recent name="C:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main\html&amp;css\Imatges" />
       <recent name="C:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main\html&amp;css" />
       <recent name="C:\Users\P$YACHOPATH\Documents\GitHub\MOHAMED\.github\workflows\pagina-web-main" />
@@ -80,7 +82,7 @@
       <workItem from="1741259057169" duration="8256000" />
       <workItem from="1741291218555" duration="3603000" />
       <workItem from="1741357311544" duration="20344000" />
-      <workItem from="1741517939772" duration="8053000" />
+      <workItem from="1741517939772" duration="10735000" />
     </task>
     <servers />
   </component>

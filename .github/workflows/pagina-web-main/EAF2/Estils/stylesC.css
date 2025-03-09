@@ -172,19 +172,6 @@ main div section {
     display: flex;
     align-items: flex-start;
 }
-
-
-
-form {
-    width: 20%;
-    padding: 20px;
-    padding-right: 40px;
-    background-color: #cccccc;
-    border-radius: 5%;
-    position: absolute;
-    left: 33%;
-    bottom: 14%;
-}
 main section div p {
     text-shadow:
             4px 4px 5px rgba(255, 0, 0, 1),
@@ -196,6 +183,16 @@ label{
         text-shadow: 2px 2px 4px rgba(200, 0, 0, 1);
 
 
+}
+form {
+    width: 20%;
+    padding: 20px;
+    padding-right: 40px;
+    background-color: #cccccc;
+    border-radius: 5%;
+    position: absolute;
+    left: 33%;
+    bottom: 14%;
 }
 
 

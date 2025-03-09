@@ -129,6 +129,7 @@ header ul li a:active {
     inset 0 0 .5em .25em var(--glow-color);
 }
 main section ul li{
+    padding: 4px;
     text-shadow:
             4px 4px 5px rgba(255, 0, 0, 1),
             4px 6px 10px rgba(255, 0, 0, 0.8),
@@ -139,4 +140,13 @@ main section p{
             4px 4px 5px rgba(255, 0, 0, 1),
             4px 6px 10px rgba(255, 0, 0, 0.8),
             4px 8px 15px rgba(255, 0, 0, 0.5);
+}
+section p{
+    width: 50%;
+    font-size: x-large;
+}
+.a1{
+    text-decoration: none;
+    text-shadow: none;
+    color: blue;
 }
