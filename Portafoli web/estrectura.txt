@@ -1,0 +1,12 @@
+/EAF2
+│
+├── index.html
+├── sobre-mi.html
+├── activitats.html
+├── contacte.html
+├── wireframe
+│
+├── /imatges          
+│ 
+└── /estils            
+   
