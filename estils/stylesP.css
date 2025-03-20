@@ -1,7 +1,5 @@
 body {
-    background-image: url("../imatges/itachi.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../Imatges/itachi.jpg");    background-repeat: no-repeat;
     background-position: center;
     margin: 0;
     height: 100vh;
